@@ -9,7 +9,7 @@ body{
     height: 100vh;
     display: flex;
     overflow: hidden;
-    background: white;
+    background: blue;
 }
 
 .left-bg{
@@ -269,5 +269,6 @@ input.error + .error-text{
     background: #441f59;
     scale: 1.02;
 }
+
 
 
