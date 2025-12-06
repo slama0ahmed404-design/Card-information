@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Card details form</title>
+</head>
+<body>
+    <div class="left-bg"></div>
+
+    <div class="main">
+
+        <div class="cards-wrapper">
+            <div class="card front">
+                <img src="card-logo.svg" alt="logo" class="card-logo">
+                <div class="card-number" id="card-Nbr">0000 0000 0000 0000</div>
+                <div class="card-info">
+                    <div class="card-name" id="card-Name">Ahmed Slama</div>
+                    <div class="card-date" id="date">00/00</div>
+                </div>
+            </div>
+
+            <div class="card back">
+                <span class="cvc" id="cvc">000</span>
+            </div>
+        </div>
+    
+        <form class="form" id="information">
+            <label>CARDHOLDER NAME</label>
+            <input class="form-input" type="text" placeholder="e.g Ahmed Slama" id="card-Name-Input">
+            <p class="error-text" id="error-name">Card Name must be all alphapetic not empty</p>
+            <label>CARD NUMBER</label>
+            <input class="form-input" type="number" placeholder="e.g 1234 5678 9123 0000" id="card-Nbr-Input">
+            <p class="error-text" id="error-nbr">Card Number must be 16 digits </p>
+            <div class="row">
+                <div>
+                    <label>EXP DATE (MM/YY)</label>
+                    <div class="row small">
+                        <input type="text" placeholder="MM" id="month">
+                        <input type="text" placeholder="YY" id="year">
+                    </div>
+                    <p class="error-text" id="error-date">Date must be MM/YY in the future</p>  
+               </div>
+                <div>
+                    <label>CVC</label>
+                    <input type="number" placeholder="e.g 123" id="cvc-Input">
+                    <p class="error-text" id="error-cvc">CVC must be 3 digits</p>
+                </div>
+            </div>
+
+            <button class="confirmation-btn" id="conf-btn">Confirm</button>
+        </form>
+        <div class="confirmation" id="confirmation">
+            <img src="icon-complete.svg" alt="confirmation" >
+            <h1>THANK YOU!</h1>
+            <p>We've added your card detials</details></p>
+            <button class="finish-btn" id="continue-btn">Continue</button>
+        </div>
+    </div>
+
+</body>
+</html>
